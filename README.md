@@ -1,12 +1,9 @@
 # boomtown
 
-Saturday:
-bootstrap template added.
-	-addded node modules:
-		gulp, gul-sass
-		jquery
-		(a few others that came with template)
+Sunday:
 
-We can do the whole thing in sass!!! Which is awesome.
+finished backend and front end, separately.
 
-I'm going to make us a trello and some cards becuase I'm having a hard time keeping myself on track.  There are a lot of rabbit holes to dive down with this project.  We definately need a good way to focus on MVP
+If you want to start up the server and stuff on your own machine, first create a DB with psql and change ---> /models/index.js to reflect your username and DB name.. Then run node/db/dbSetup.js and node/db/seed.js
+
+you can use postman to add surveys and users and whatnot but its kind of confusing without reading and understadning how all the routes work.
