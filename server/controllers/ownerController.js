@@ -1,5 +1,6 @@
 var db = require('../models');
 var Owner = db.models.Owner;
+var Result = db.models.Result;
 
 //send all owners and info
 function index(req, res){
@@ -56,7 +57,9 @@ function destroy(req, res){
 function getByName(req, res){
 	Owner.findAll({
 		where: {
-			name : req.params.name
+			name : {
+				$like : '%' + req.params.name + '%'
+			}
 		}
 	})
 	.then(function(owner){
@@ -68,7 +71,9 @@ function getByName(req, res){
 function getByShop(req, res){
 	Owner.findAll({
 		where: {
-			shopName : req.params.shopName
+			shopName : {
+				$like : '%' + req.params.shopName + '%'
+			}
 		}
 	})
 	.then(function(owner){
@@ -80,7 +85,9 @@ function getByShop(req, res){
 function getByEmail(req, res){
 	Owner.findAll({
 		where: {
-			email : req.params.email
+			email : {
+				$like : '%' + req.params.email + '%'
+			}
 		}
 	})
 	.then(function(owner){

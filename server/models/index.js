@@ -11,6 +11,7 @@ var Owner = sequelize.import('./owner');
 var Result = sequelize.import('./result');
 
 Result.belongsTo(Owner);
+Owner.hasMany(Result);
 
 module.exports.models = {
 	Owner : Owner,

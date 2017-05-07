@@ -9,6 +9,7 @@ var ownerCreate = function(){
 	});
 };
 
+
 var resultCreate = function(ownerId){
 	return DB.Result.create({
 		question1: 'female',
