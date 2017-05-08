@@ -12,9 +12,11 @@ function index(req, res){
 
 //save a new owner
 function create(req, res){
+	console.log(req.body);
 	Owner.create(req.body)
 		.then(function(owner){
 			if (!owner) return (res, "owner not saved");
+		
 			res.json(owner);
 		});
 }

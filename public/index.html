@@ -85,7 +85,7 @@
 			
 				<h1 class="section-title">Getting To Know You and Your Customers</h1>
 				<p class="section-description">Please take the time to fill out this short survey. We will use your answers to better identify your customer base and create tailored book boxes that your consumers will be excited about!</p>
-				<form>
+				<form id='surveySubmit' method="post">
                     <div class="form-group">
                         <label for="usr">Name:</label>
                         <input type="text" class="form-control" id="usr" placeholder="Enter name">
@@ -245,7 +245,7 @@
 			</div>
 			
 			<div class="text-center">
-				<button type="submit" class="btn btn-warning center">Submit</button>
+				<button id="surveySubmit" type="submit" class="btn btn-warning center">Submit</button>
 			</div>
 		</section>
 </form>
@@ -274,7 +274,9 @@
 		<!-- ==============================================
 		SCRIPTS
 		=============================================== -->	
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/submit.js"></script>
 		<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
 		
 		<script src="assets/js/libs/bootstrap.min.js"></script>
