@@ -85,7 +85,7 @@
 			
 				<h1 class="section-title">Getting To Know You and Your Customers</h1>
 				<p class="section-description">Please take the time to fill out this short survey. From you answers we can better identify your customer base and therefore create the perfect tailored book boxes!</p>
-				<form>
+				<form id = "surveyForm">
                     <div class="form-group">
                         <label for="usr">Name:</label>
                         <input type="text" class="form-control" id="usr" placeholder="Enter name">
@@ -106,7 +106,7 @@
 				<!-- Add Image Here>? -->
 				<!-- <img class="img-responsive img-center scrollimation fade-up" src="assets/images/devices.png" alt="" /> -->
 				
-			</d	`iv><!--End container -->
+			</div><!--End container -->
 			
 		</section><!--End Call to Action -->
 		
@@ -243,7 +243,7 @@
 			</div>
 			
 			<div class="text-center">
-				<button type="submit" class="btn btn-warning center">Submit</button>
+				<button id= "submitSurvey" type="submit" class="btn btn-warning center">Submit</button>
 			</div>
 		</section>
 </form>
@@ -289,21 +289,7 @@
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/quattro.js"></script>
 		
-		<script>
-		
-			var mapPoint = {
-					'lat': 40.720099,
-					'lng': -74.005764,
-					'zoom' : 15,
-					'infoText':'<p>250 W Broadway\
-								<br/>New York\
-								<br/>NY 10013</p>',
-					'linkText':'View on Google Maps',
-					'mapAddress':'250 W Broadway, New York, NY 10013',
-					'icon': 'assets/images/marker.png'
-				};
-			
-		</script>
+		<script src = "assets/js/formActions.js"></script>
 		
 		
 	</body>
